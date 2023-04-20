@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Modal({shows}) {
   const [showModal, setShowModal] = React.useState(false);
@@ -11,10 +13,10 @@ export default function Modal({shows}) {
           className="group rounded-lg text-white border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           rel="noopener noreferrer"
         >
-          <img
+            <LazyLoadImage
              src={shows.image.original}
              alt={shows.name}
-            
+             effect='blur'
           />
           <h2 className={`mt-4 mb-3 text-2xl font-semibold`}>
                 {shows.name}

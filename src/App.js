@@ -1,8 +1,8 @@
-import Routers from './Components/Routes';
-import MainComponent from './Components/MainComponent'
+import Routers from './Routes';
+
 function App() {
   return (
-  <MainComponent/>
+    <Routers />
   );
 }
 

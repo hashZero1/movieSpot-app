@@ -9,7 +9,7 @@ export const MovieProvider = ({children}) =>{
     const [allShow, setAllShow] = useState()
     const URL = `https://api.tvmaze.com/shows`;
     //setting the show by showName
-    const [show, setCity] = useState(null);
+    const [show, setCity] = useState();
     const Base_URL = `https://api.tvmaze.com/singlesearch/shows?q=${showName}`;
     //search for show
 

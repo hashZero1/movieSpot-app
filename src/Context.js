@@ -32,7 +32,7 @@ export const MovieProvider = ({ children }) => {
         const { data } = res;
         setAllShow(data);
       } catch (err) {
-        alert("Please Enter The Correct Movie Name");
+        alert("Error occurs! Please try again later");
       }
     }
     fetchShow();
